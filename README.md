@@ -1,3 +1,7 @@
+# create APIkey 
+Click on this link https://newsapi.org/ and create your own api key
+# Add API Key
+Replace your Api key with 12345 in src/helper/APIKey.js 
 # Getting Started with npm install
 Run Npm install, to get all the libraries referenced in the Project
 ## Available Scripts

@@ -1,0 +1,211 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+main {
+  margin-top: 4.5rem;
+}
+
+.header{
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 6rem;
+  background-color: black;
+  text-align: center;
+  color: white;
+  z-index: 1;
+  font-size: 3rem;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background-color: black;
+  text-align: center;
+  color: white;
+  font-size: 0.9rem;
+}
+
+.menu {
+  font-size: 1rem;
+    text-align: left;
+    margin-left: 1rem;
+    display: flex;
+}
+
+.newsTitle {
+  font-size: 1rem !important;
+}
+
+img{
+  height:150px;
+  width:100%;
+}
+
+.item{
+  padding-left:5px;
+  padding-right:5px;
+}
+.item-card{
+  transition:0.5s;
+  cursor:pointer;
+}
+.item-card-title{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  padding: 5px;
+}
+.item-card-title i{  
+  font-size:15px;
+  transition:1s;
+  cursor:pointer;
+  color:#ffa710
+}
+.card-title i:hover{
+  transform: scale(1.25) rotate(100deg); 
+  color:#18d4ca;
+  
+}
+.card:hover{
+  transform: scale(1.05);
+  box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+}
+.card-text{
+  height:80px;  
+}
+
+.card::before, .card::after {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  transform: scale3d(0, 0, 1);
+  transition: transform .3s ease-out 0s;
+  background: rgba(255, 255, 255, 0.1);
+  content: '';
+  pointer-events: none;
+}
+.card::before {
+  transform-origin: left top;
+}
+.card::after {
+  transform-origin: right bottom;
+}
+.card:hover::before, .card:hover::after, .card:focus::before, .card:focus::after {
+  transform: scale3d(1, 1, 1);
+}
+
+.containerCard {
+  margin-bottom: 0.8rem !important;
+}
+
+.headline {
+  background: red;
+    color: white;
+    font-size: 1.5rem;
+    text-align: center;
+    font-weight: 700;
+    margin-top : 6rem !important
+}
+
+.prevSearch {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top : 6rem !important;
+  padding-left: 10rem;
+}
+
+.currentSearch {
+  font-size: 1rem;
+  font-weight: 600;
+  margin-top : 0.2rem !important;
+  padding-left: 10rem;
+}
+
+.currentWord {
+  font-size: 1rem;
+  text-decoration: none;
+  color: orangered;
+  padding-right: 1rem;
+}
+
+.searchedItems {
+  font-size: 1rem;
+  text-decoration: underline;
+  color: orangered;
+  padding-right: 1rem;
+  cursor: pointer;
+}
+
+.search {
+  margin-left: 63rem;
+}
+
+.newsHeading {
+  border-bottom: 1px solid;
+    color: black;
+    padding: 1rem;
+    font-size: 2rem;
+    text-align: center;
+}
+
+.imageStyle { 
+  margin-bottom: 1rem;
+    border-bottom: 1px dotted;
+    padding: 8px;
+}
+
+.newsContainer {
+  margin-top: 8rem !important;
+}
+
+.authorDate {
+  font-size: 0.8rem;
+    color: darkgrey;
+    font-weight: 700;
+}
+
+.fa-home {
+  cursor: pointer;
+  font-size: 1.4rem !important;
+  flex: 1;
+}
+
+.fa-search {
+  cursor: pointer;
+  font-size: 1.2rem !important;
+  float: right;
+  margin-right: 8px;
+}
+
+.input {
+  height: 1.5rem;
+  margin-right: 8px;
+}
+
+.errspan {
+  position: relative;
+    right: 25px;
+    display: flex;
+    height: 15px;
+    padding-top: 4px;
+    color: black;
+}
+
+.input-wrapper {
+  display: inline-flex;
+}
